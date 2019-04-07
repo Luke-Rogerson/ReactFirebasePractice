@@ -30,8 +30,6 @@ const SignInFormBase = props => {
     setUserDetails({ ...userDetails, [event.target.name]: event.target.value });
   };
 
-  //   const { email, password, error } = userDetails;
-
   const isInvalid = password === '' || email === '';
 
   return (
