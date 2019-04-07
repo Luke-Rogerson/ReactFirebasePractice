@@ -13,10 +13,9 @@ const INITIAL_STATE = {
 
 const SignInFormBase = props => {
   const [userDetails, setUserDetails] = useState({ ...INITIAL_STATE });
+  const { email, password, error } = userDetails;
 
   const onSubmit = event => {
-    const { email, password } = userDetails;
-
     props.firebase
       .doSignInWithEmailAndPassword(email, password)
       .then(() => {
@@ -31,7 +30,7 @@ const SignInFormBase = props => {
     setUserDetails({ ...userDetails, [event.target.name]: event.target.value });
   };
 
-  const { email, password, error } = userDetails;
+  //   const { email, password, error } = userDetails;
 
   const isInvalid = password === '' || email === '';
 
