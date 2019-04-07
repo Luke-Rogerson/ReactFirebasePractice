@@ -1,11 +1,16 @@
 import React from 'react';
 
-const SignIn = () => {
+import SignInForm from './SignInForm';
+import SignUpLink from '../SignUp/SignUpLink';
+
+const SignInPage = () => {
   return (
     <div>
-      <h1>SignIn</h1>
+      <h1>Sign In</h1>
+      <SignInForm />
+      <SignUpLink />
     </div>
   );
 };
 
-export default SignIn;
+export default SignInPage;
