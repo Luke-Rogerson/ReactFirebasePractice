@@ -1,11 +1,14 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+import { compose } from 'recompose';
 
-const SignOut = () => {
-  return (
-    <div>
-      <h1>SignOut</h1>
-    </div>
-  );
-};
+import { withFirebase } from '../Firebase';
+import * as ROUTES from '../../constants/routes';
 
-export default SignOut;
+const SignOutButton = ({ firebase }) => (
+  <button type='button' onClick={firebase.doSignOut}>
+    Sign Out
+  </button>
+);
+
+export default withFirebase(SignOutButton);
