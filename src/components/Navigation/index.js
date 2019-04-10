@@ -9,7 +9,9 @@ const Navigation = ({ authUser }) => {
     console.log(authUser);
   }
 
-  return <div>{authUser ? <NavigationAuth /> : <NavigationNonAuth />}</div>;
+  return <div>
+  {authUser === 'null' ? <h1>Yes</h1> : <h1>Nope</h1>}
+  {authUser ? <NavigationAuth /> : <NavigationNonAuth />}</div>;
 };
 
 const NavigationAuth = () => (
