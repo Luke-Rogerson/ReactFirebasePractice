@@ -2,6 +2,7 @@ import React from 'react';
 
 import SignInForm from './SignInForm';
 import SignUpLink from '../SignUp/SignUpLink';
+import { PasswordResetLink } from '../PasswordForget';
 
 const SignInPage = () => {
   return (
@@ -9,6 +10,7 @@ const SignInPage = () => {
       <h1>Sign In</h1>
       <SignInForm />
       <SignUpLink />
+      <PasswordResetLink />
     </div>
   );
 };
