@@ -5,11 +5,7 @@ import SignOutButton from '../SignOut';
 import * as ROUTES from '../../constants/routes';
 import { AuthUserContext } from '../Session';
 
-const Navigation = ({ authUser }) => {
-  {
-    console.log(authUser);
-  }
-
+const Navigation = () => {
   return (
     <div>
       <AuthUserContext.Consumer>
