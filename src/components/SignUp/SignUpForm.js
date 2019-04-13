@@ -17,7 +17,7 @@ const SignUpFormBase = props => {
   const [userDetails, setUserDetails] = useState({ ...INITIAL_STATE });
 
   const onSubmit = event => {
-    const { username, email, passwordOne } = userDetails;
+    const { email, passwordOne } = userDetails;
 
     props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)

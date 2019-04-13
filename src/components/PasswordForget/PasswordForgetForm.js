@@ -9,7 +9,6 @@ const PasswordForgetFormBase = props => {
 
   const onChange = e => {
     setEmail(e.target.value);
-    console.log(email);
   };
 
   const onSubmit = e => {

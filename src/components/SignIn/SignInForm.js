@@ -37,14 +37,14 @@ const SignInFormBase = props => {
       <form onSubmit={onSubmit}>
         <input
           name='email'
-          value={email || ''}
+          value={email}
           onChange={onChange}
           type='text'
           placeholder='Enter your email address'
         />
         <input
           name='password'
-          value={password || ''}
+          value={password}
           onChange={onChange}
           type='password'
           placeholder='Enter your password'
